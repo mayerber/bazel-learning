@@ -12,4 +12,7 @@ csharp_binary(
     srcs = [
         "Program.cs",
     ],
+    deps = [
+        "//example/proto:thing_csharp_proto.dll",
+    ]
 )
