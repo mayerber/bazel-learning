@@ -49,17 +49,20 @@ http_archive(
 )
 
 load("@rules_proto_grpc//:repositories.bzl", "rules_proto_grpc_toolchains", "rules_proto_grpc_repos")
+
 rules_proto_grpc_toolchains()
+
 rules_proto_grpc_repos()
 
 load("@rules_proto//proto:repositories.bzl", "rules_proto_dependencies", "rules_proto_toolchains")
+
 rules_proto_dependencies()
+
 rules_proto_toolchains()
 
 load("@rules_proto_grpc//cpp:repositories.bzl", "cpp_repos")
 
 cpp_repos()
-
 
 load("@rules_proto_grpc//csharp:repositories.bzl", rules_proto_grpc_csharp_repos = "csharp_repos")
 
