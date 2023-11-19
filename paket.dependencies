@@ -1,0 +1,6 @@
+group example_deps
+    framework: net6.0
+    storage: none
+    source https://api.nuget.org/v3/index.json
+
+    nuget Microsoft.NETCore.App.Ref 6.0.10

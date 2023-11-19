@@ -1,0 +1,8 @@
+
+
+GROUP example_deps
+STORAGE: NONE
+RESTRICTION: == net6.0
+NUGET
+  remote: https://api.nuget.org/v3/index.json
+    Microsoft.NETCore.App.Ref (6.0.10)
