@@ -15,4 +15,5 @@ cpp_proto_library(
 csharp_proto_library(
     name = "thing_csharp_proto.dll",
     protos = [":thing_proto"],
+    visibility = ["//example/csharp/console:__pkg__"],
 )
