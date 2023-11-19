@@ -1,5 +1,5 @@
 ## Environment setup
-### C++ Tool chain
+### C++ tool chain
 Must have C++ tool chain installed on the system. See instructions at https://code.visualstudio.com/docs/cpp/config-wsl
 ```shell
 sudo apt-get install build-essential gdb
@@ -15,3 +15,10 @@ dotnet tool restore
 
 ## Dependencies
 Dependencies are managed using Paket. Edit `paket.dependencies` and run `update_deps.sh` to apply updates.
+
+## Build
+Build all targets with the following command from the repository's root:
+
+```shell
+bazel build ...
+```

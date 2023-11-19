@@ -1,11 +1,15 @@
-load("@io_bazel_rules_dotnet//dotnet:defs.bzl", "csharp_binary")
+load(
+    "@rules_dotnet//dotnet:defs.bzl",
+    "csharp_binary",
+)
 
 csharp_binary(
+    target_frameworks = ["net6.0"],
+    targeting_packs = [
+        "@example_deps//microsoft.netcore.app.ref",
+    ],
     name = "console.exe",
     srcs = [
         "Program.cs",
-    ],
-    deps = [
-        "@core_sdk_stdlib//:libraryset",
     ],
 )

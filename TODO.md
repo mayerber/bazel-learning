@@ -1,0 +1,1 @@
+1. Install Buildifier. buildifier is a tool for formatting bazel BUILD and .bzl files with a standard convention. https://github.com/bazelbuild/buildtools/blob/master/buildifier/README.md
